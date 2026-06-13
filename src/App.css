@@ -1,0 +1,251 @@
+/* #root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+} */
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+
+.postcard {
+  border: 1px solid red;
+  padding: 10px;
+  max-width: 500px;
+  margin: 0 auto;
+  margin-bottom: 10px;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin-bottom: 30px;
+}
+
+.form input {
+  width: 100%;
+  height: 48px;
+  font-family: Poppins, sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  background: #fff;
+  border: 1px solid #dedede;
+  border-radius: 8px;
+  box-sizing: border-box;
+  padding: 12px 16px;
+  outline: none;
+  margin-right: 16px;
+}
+.postBtn {
+  font-size: 1rem;
+  line-height: 24px;
+  font-style: normal;
+  font-weight: 600;
+  font-family: Poppins;
+  border: 0;
+  box-sizing: border-box;
+  border-radius: 8px;
+  text-transform: none;
+  color: #fff;
+  background-color: #e7424b;
+  box-shadow: none;
+  cursor: pointer;
+}
+
+.postBtn:disabled {
+  cursor: not-allowed;
+}
+.page {
+      display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.header {
+  height: 60px;
+  background-color: red;
+}
+
+footer {
+  height: 100px;
+  background-color: green;
+}
+
+.headerinner {
+  display:flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+
+.headerinner img {
+  flex: 1;
+}
+
+.body {
+  display: flex;
+  flex: 1;
+}
+
+
+.sidebar {
+      background-color: green;
+    width: 240px;
+  display: flex;
+  flex-direction: column;
+} 
+
+.main {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+.card {
+    flex: 1 1 0; 
+    /* equal width and equal height */
+  border: 1px solid brown;
+  background-color: yellow;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* PAGE */
+.page {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  font-family: Arial, sans-serif;
+}
+
+/* APP HEADER */
+.app-header {
+  height: 64px;
+  background: #111827;
+  color: white;
+  padding: 0 24px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-shrink: 0;
+}
+
+/* BODY */
+.body {
+  flex: 1;
+  display: flex;
+  overflow: hidden; /* CRITICAL */
+}
+
+/* SIDEBAR */
+.sidebar {
+  width: 240px;
+  background: #1f2937;
+  color: white;
+  display: flex;
+  flex-direction: column;
+}
+
+/* SIDEBAR TOP (scrolls if needed) */
+.sidebar-top {
+  flex: 1;
+  overflow-y: auto;
+  padding: 16px;
+}
+
+.sidebar-top p {
+  margin-bottom: 12px;
+  cursor: pointer;
+}
+
+/* SIDEBAR BOTTOM (always visible) */
+.sidebar-bottom {
+  padding: 16px;
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+/* MAIN */
+.main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden; /* IMPORTANT */
+  background: #f3f4f6;
+}
+
+/* DASHBOARD HEADER (FAKE STICKY) */
+.dashboard-header {
+  height: 56px;
+  background: white;
+  padding: 0 16px;
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #ddd;
+  flex-shrink: 0;
+}
+
+/* ONLY SCROLL CONTAINER */
+.content {
+  flex: 1;
+  overflow-y: auto;
+  padding: 16px;
+}
+
+/* CONTENT CARDS */
+.card {
+  background: white;
+  padding: 16px;
+  margin-bottom: 16px;
+  border-radius: 6px;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.1);
+}
