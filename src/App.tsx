@@ -1,18 +1,16 @@
 
-import './App.css'
-import Layout from './components/Layout';
-import { Routes, Route } from 'react-router-dom';
-
+import { useState } from 'react';
+import './App.css';
+import Cart from './components/Cart/Cart';
 
 function App() {
-
+  const [cartItems, setCartItems] = useState([]);
   return (
-    <main>
-      <Routes>
-        <Route path='/' element={<Layout />}></Route>
-      </Routes>
-    </main>
-  )
+    <div>
+      <Cart cartItems={cartItems} setCartItems={setCartItems}/>
+    </div>
+  );
 }
 
-export default App
+export default App;
+

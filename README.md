@@ -184,3 +184,43 @@ extraReducers(builder):
             v
    Component Re-renders
 
+
+
+
+# GIT 
+```
+SCENARIO-1 => When u commited to wrng branch
+Revert last commit => git reset --hard HEAD~1
+Check logs - git log / git log --oneline -1 (-1 numer of commits)
+Single commit pick - git cherry-pick commit-hash
+
+Example
+    git checkout main => pick commit from here
+    git checkout feature => commit in this branch with cherry-pick
+    git checkout main => revert the picked commit with git reset 
+
+
+SCENARIO-2 => You made the last commit you want to remove it and discard changes
+git reset --hard HEAD~1 => permanently remove the changes
+
+SCENARIO-3
+Difference git reset and git revert
+reset ( dangerous ) revert (safe)
+a-b-c-d-e => a-b-c-d => git reset will remove e changes and changes after e NOW HEAD is pointing to D
+
+a-b-c-d-e => a-b-c-d-r => creates a new commit (R) that undoes changes of E ( history is safe)
+Prefer git revert if PUSHED since others might have pulled
+Prefer git reset /revert if just commited locally
+
+revert multiple commits similar to cherry-pick syntaxes =>> 
+
+SCENARIO-4
+cherry-pick multiple commits => 
+1. git cherry-pick d5bd28f 6eceb12 0a52808
+2.Cherry-pick commits individually
+3.git cherry-pick d5bd28f^..0a52808 ( parent - child)
+
+SCNERAIO-5
+How to squash multiple commits into 1
+
+```
