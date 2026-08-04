@@ -241,6 +241,33 @@ a-b-c-d
 git rebase => 
 
 SCENARIO => temporarily saves the uncommited changes
+Git can store many stashes until you delete them.
+
+git stash
+git pop
+
+git stash push -m  "stash1"
+git stash push -m "stash1"
+
+git stash list
+
+apply=>applies changes but keeps stash
+
+git stash apply
+git stash apply stash2
+
+
+remove-> applies changes but removes stash
+
+git stash pop
+git stash pop stash2
+
+Remove specfic stash
+
+git stash drop stash2
+
+
+#remove all stashes
+
+git stash clear
 ```
-
-
