@@ -223,4 +223,22 @@ cherry-pick multiple commits =>
 SCNERAIO-5
 How to squash multiple commits into 1
 
+git rebase -i HEAD~3
+=> editor 
+1. Keep first one as pick
+2. change others to squash/s
+3. add come msg => i insert= :wq save and exit= :q quit
+4. git log --oneline
+
+if already pushed => git push --force-with-lease origin feature/scenario
+
+SCENARIO-6
+
+git merge => will keep all history and create a merge commit 
+a-b-c-d
+        e-f-g 
+        after merge => a-b-c-d-h ( h will merge e-f-g into h aligning it with respect to main branch)
+git rebase => 
+
+SCENARIO => temporarily saves the uncommited changes
 ```
