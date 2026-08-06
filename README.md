@@ -271,3 +271,5 @@ git stash drop stash2
 
 git stash clear
 ```
+
+console.log("hi...)
