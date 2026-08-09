@@ -271,3 +271,7 @@ git stash drop stash2
 
 git stash clear
 ```
+
+console.log("hi...)
+
+console.log("Ci pipeline steps...")
