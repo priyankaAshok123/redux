@@ -4,7 +4,7 @@ import './App.css';
 function App() {
   return (
     <div>
-     Hello....
+     Hello....Added new automatic docker setup....
     </div>
   );
 }
