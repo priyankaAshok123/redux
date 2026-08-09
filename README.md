@@ -273,3 +273,5 @@ git stash clear
 ```
 
 console.log("hi...)
+
+console.log("Ci pipeline steps...")
